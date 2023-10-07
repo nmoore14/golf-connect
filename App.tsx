@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import ThemeProvider from './src/theme/ThemeProvider';
 
+import Header from './src/components/ui/Header';
+
 import Home from './src/screens/Home';
 import Golfers from './src/screens/Golfers';
 import Leagues from './src/screens/Leagues';
@@ -19,6 +21,9 @@ export default function App() {
           screenOptions={({ route }) => ({
             tabBarActiveTintColor: 'tomato',
             tabBarInactiveColor: 'gray',
+            header: () => {
+              return <Header title='Golf Connect'/>
+            }
           })}
         >
           <Tab.Screen

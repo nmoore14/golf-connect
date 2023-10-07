@@ -6,5 +6,14 @@ export interface iTheme {
     secondary: string;
     accent: string;
     error: string;
+    neutral: string;
   }
+}
+
+export interface iHeaderLayout {
+  flexDirection: 'row';
+  alignItems: 'center';
+  justifyContent: 'space-between';
+  padding: number;
+  paddingTop: number;
 }
