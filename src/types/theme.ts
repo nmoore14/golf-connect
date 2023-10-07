@@ -5,8 +5,11 @@ export interface iTheme {
     background: string;
     secondary: string;
     accent: string;
-    error: string;
+    alert: string;
     neutral: string;
+    card: string;
+    text: string;
+    border: string;
   }
 }
 

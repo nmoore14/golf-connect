@@ -8,8 +8,11 @@ export const Light:iTheme = {
     background: themeColors.neutral50,
     secondary: themeColors.secondary500,
     accent: themeColors.accent600,
-    error: themeColors.error600,
+    alert: themeColors.alert600,
     neutral: themeColors.neutral500,
+    card: themeColors.neutral50,
+    text: themeColors.primary800,
+    border: themeColors.neutral100,
   },
 }
 
@@ -20,8 +23,11 @@ export const Dark:iTheme = {
     background: themeColors.primary950,
     secondary: themeColors.secondary700,
     accent: themeColors.accent500,
-    error: themeColors.error400,
+    alert: themeColors.alert400,
     neutral: themeColors.neutral200,
+    card: themeColors.primary950,
+    text: themeColors.neutral200,
+    border: themeColors.primary800,
   },
 }
 

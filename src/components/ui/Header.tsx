@@ -31,11 +31,10 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 35,
-    fontWeight: 'bold',
   },
   iconContainer: {
     flexDirection: 'row',
-    gap: 10,
+    gap: 20,
   },
 });
 
