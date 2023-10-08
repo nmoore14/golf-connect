@@ -3,7 +3,7 @@ import { Switch } from 'react-native';
 import { ThemeContext } from '../../theme/ThemeProvider';
 import { Light, Dark } from '../../theme/Themes';
 
-const ThemeToggle: React.FC = () => {
+const ThemeToggle:React.FC = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const toggleTheme = () => {
