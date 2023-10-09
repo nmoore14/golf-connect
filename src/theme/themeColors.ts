@@ -31,6 +31,7 @@ const themeColors = {
   accent700:'#a66f24',
   accent800:'#7f5822',
   accent900:'#5a4221',
+  neutral0: '#f8f8f8',
   neutral50: '#efefef',
   neutral100: '#dbdbdb',
   neutral200: '#c7c7c7',

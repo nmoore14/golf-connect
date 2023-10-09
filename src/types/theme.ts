@@ -3,6 +3,7 @@ export interface iTheme {
   colors: {
     primary: string;
     background: string;
+    backgroundAlt: string;
     secondary: string;
     accent: string;
     alert: string;

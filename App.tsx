@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons';
 import { iTheme } from './src/types/theme';
 import ThemeProvider, { ThemeContext } from './src/theme/ThemeProvider';
+import { StatusBar } from 'expo-status-bar';
 
 import { HeaderLayout } from './src/theme/Themes';
 
@@ -33,10 +34,26 @@ function MainTabs() {
         <Tab.Navigator
           initialRouteName='Home'
           screenOptions={({ route, navigation }) => ({
-            tabBarShowLabel: false,
             tabBarActiveTintColor: context.theme.colors.accent,
             tabBarInactiveColor: context.theme.colors.neutral,
-            headerShown: false,
+            header: () => {
+              return (
+                <View style={{...HeaderLayout, backgroundColor: context.theme.colors.background}}>
+                  <Text style={{...styles.title, color: context.theme.colors.primary}}>
+                    Golf Connect
+                  </Text>
+                  <View style={styles.iconContainer}>
+                    <FontAwesome name='bell' size={24} color={ context.theme.colors.neutral } />
+                    <FontAwesome
+                      name='gear'
+                      size={24}
+                      color={ context.theme.colors.neutral }
+                      onPress={() => navigation.push('Settings')}
+                    />
+                  </View>
+                </View>
+              )
+            },
           })}
         >
           <Tab.Screen
@@ -44,7 +61,7 @@ function MainTabs() {
             component={ Golfers }
             options={{
               tabBarIcon: ({ focused, color, size }) => (
-                <FontAwesome5 name='golf-ball' size={ size } color={ color } />
+                <FontAwesome5 name='golf-ball' size={ focused ? size * 1.25 : size } color={ color } />
               ),
             }}
           />
@@ -53,7 +70,7 @@ function MainTabs() {
             component={ Leagues }
             options={{
               tabBarIcon: ({ focused, color, size }) => (
-                <FontAwesome5 name='trophy' size={ size } color={ color } />
+                <FontAwesome5 name='trophy' size={ focused ? size * 1.25 : size } color={ color } />
               ),
             }}
           />
@@ -62,7 +79,7 @@ function MainTabs() {
             component={ Home }
             options={{
               tabBarIcon: ({ focused, color, size }) => (
-                <FontAwesome5 name='home' size={ size } color={ color } />
+                <FontAwesome5 name='home' size={ focused ? size * 1.25 : size } color={ color } />
               ),
             }}
           />
@@ -71,7 +88,7 @@ function MainTabs() {
             component={ Profile }
             options={{
               tabBarIcon: ({ focused, color, size }) => (
-                <FontAwesome5 name='user-alt' size={ size } color={ color } />
+                <FontAwesome5 name='user-alt' size={ focused ? size * 1.25 : size } color={ color } />
               ),
             }}
           />
@@ -100,29 +117,13 @@ export default function App() {
       <ThemeContext.Consumer>
         {(context: { theme: iTheme }) => (
           <NavigationContainer theme={context.theme as any}>
+            <StatusBar style={ context.theme.dark ? 'light' : 'dark' } />
             <Stack.Navigator
-              screenOptions={({ route, navigation }) => ({
+              screenOptions={() => ({
                 tabBarShowLabel: false,
                 tabBarActiveTintColor: context.theme.colors.accent,
                 tabBarInactiveColor: context.theme.colors.neutral,
-                header: () => {
-                  return (
-                    <View style={{...HeaderLayout, backgroundColor: context.theme.colors.background}}>
-                      <Text style={{...styles.title, color: context.theme.colors.primary}}>
-                        Golf Connect
-                      </Text>
-                      <View style={styles.iconContainer}>
-                        <FontAwesome name='bell' size={24} color={ context.theme.colors.neutral } />
-                        <FontAwesome
-                          name='gear'
-                          size={24}
-                          color={ context.theme.colors.neutral }
-                          onPress={() => navigation.push('Settings')}
-                        />
-                      </View>
-                    </View>
-                  )
-                },
+                headerShown: false,
               })}
             >
               <Stack.Screen name='Main' component={MainTabs} />
