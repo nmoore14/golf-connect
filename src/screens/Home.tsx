@@ -3,8 +3,6 @@ import { Text, View, StyleSheet } from 'react-native';
 import { ThemeContext } from '../theme/ThemeProvider';
 import { iTheme } from '../types/theme'; // Import the iTheme type
 
-import ThemeToggle from '../components/settings/ThemeToggle';
-
 export default function Home() {
   return (
     <ThemeContext.Consumer>
