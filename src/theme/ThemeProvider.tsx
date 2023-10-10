@@ -3,8 +3,6 @@ import { iTheme } from '../types/theme';
 import { Light, Dark } from './Themes';
 import { useColorScheme } from 'react-native';
 
-const colorScheme = useColorScheme();
-
 // Define the shape of the context value
 interface ThemeContextValue {
   theme: iTheme;
@@ -13,7 +11,7 @@ interface ThemeContextValue {
 
 // Create the context with an initial value (empty object)
 export const ThemeContext = React.createContext<ThemeContextValue>({
-  theme: colorScheme === 'light' ? Light : Dark, // Provide an initial theme value if needed
+  theme: Light, // Provide an initial theme value if needed
   setTheme: () => {}, // Provide a dummy function if needed
 });
 
@@ -22,7 +20,10 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = React.useState<iTheme>(Light);
+  const colorScheme = useColorScheme();
+  const colorTheme = colorScheme === 'light' ? Light : Dark
+
+  const [theme, setTheme] = React.useState<iTheme>(colorTheme);
 
   // Create the context value object
   const contextValue: ThemeContextValue = {
