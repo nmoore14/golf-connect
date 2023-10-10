@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, FlatList, SafeAreaView, TextInput, TouchableOpacity } from 'react-native';
 import { ThemeContext } from '../theme/ThemeProvider';
+import { Golfer } from '../types/golfer';
 import { iTheme } from '../types/theme';
 
 import { Ionicons } from '@expo/vector-icons';
@@ -10,16 +11,22 @@ import GolferListItem from '../components/ui/Golfers/GolferListItem';
 
 import rankings from '../data/rankings.json';
 
-type GolferProps = {
-  lastName: string,
-  firstName: string,
-}
-
-const onSearch = (query:string) => {
-  console.log(query);
-}
-
 export default function Home() {
+  const [queryText, setQueryText] = React.useState('');
+  const [filteredGolfers, setFilteredGolfers] = React.useState<Golfer[]>([])
+
+  const golfers = rankings.rankings;
+
+  const onSearch = (query:string) => {
+    setQueryText(query)
+
+    const filteredGoflers: Golfer[] = golfers.filter((golfer) =>
+      golfer.lastName.toLowerCase().includes(query.toLowerCase()) || golfer.firstName.toLowerCase().includes(query.toLowerCase())
+    )
+
+    setFilteredGolfers(filteredGoflers);
+  }
+
   return (
     <ThemeContext.Consumer>
       {(context: { theme: iTheme }) => (
@@ -37,7 +44,7 @@ export default function Home() {
             </TouchableOpacity>
           </View>
           <FlatList
-            data={rankings.rankings}
+            data={ filteredGolfers.length > 0 ? filteredGolfers : golfers}
             renderItem={
               ({item}) => <GolferListItem golfer={item}  />
             }

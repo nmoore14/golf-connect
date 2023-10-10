@@ -1,22 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { ThemeContext } from '../../../theme/ThemeProvider';
+import { Golfer } from '../../../types/golfer';
 import { iTheme } from '../../../types/theme';
 
-type GolferProps = {
-  lastName: string,
-  firstName: string,
-  rank: number,
-  previousRank: number,
-  events: number,
-  totalPoints: number,
-  avgPoints: number,
-  pointsLost: number,
-  pointsGained: number,
-}
-
 type GolferListItemProps = {
-  golfer: GolferProps,
+  golfer: Golfer,
 }
 
 const GolferListItem: React.FC<GolferListItemProps> = ({ golfer }) => {

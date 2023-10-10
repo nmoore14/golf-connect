@@ -1,6 +1,9 @@
 import React, { ReactNode } from 'react';
 import { iTheme } from '../types/theme';
 import { Light, Dark } from './Themes';
+import { useColorScheme } from 'react-native';
+
+const colorScheme = useColorScheme();
 
 // Define the shape of the context value
 interface ThemeContextValue {
@@ -10,7 +13,7 @@ interface ThemeContextValue {
 
 // Create the context with an initial value (empty object)
 export const ThemeContext = React.createContext<ThemeContextValue>({
-  theme: Light, // Provide an initial theme value if needed
+  theme: colorScheme === 'light' ? Light : Dark, // Provide an initial theme value if needed
   setTheme: () => {}, // Provide a dummy function if needed
 });
 

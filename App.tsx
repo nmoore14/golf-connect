@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { useContext, useState } from 'react';
+import { StyleSheet, Text, View, useColorScheme } from 'react-native';
 import * as Font from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,7 +9,7 @@ import { iTheme } from './src/types/theme';
 import ThemeProvider, { ThemeContext } from './src/theme/ThemeProvider';
 import { StatusBar } from 'expo-status-bar';
 
-import { HeaderLayout } from './src/theme/Themes';
+import { Dark, HeaderLayout, Light } from './src/theme/Themes';
 
 import Home from './src/screens/Home';
 import Golfers from './src/screens/Golfers';
@@ -26,6 +26,7 @@ let appFonts = {
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+
 
 function MainTabs() {
   return (
