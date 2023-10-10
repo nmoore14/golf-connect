@@ -28,7 +28,7 @@ const GolferListItem: React.FC<GolferListItemProps> = ({ golfer }) => {
           backgroundColor: context.theme.colors.backgroundAlt,
         }}>
           <Text style={{
-            ...styles.title,
+            ...styles.golferTitle,
             color: context.theme.colors.primary
           }}>
             {golfer.lastName}, {golfer.firstName}
@@ -51,9 +51,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     borderRadius: 8,
   },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
+  golferTitle: {
+    fontFamily: 'MavenPro-Medium',
+    fontSize: 28,
     marginBottom: 4,
   },
   description: {
