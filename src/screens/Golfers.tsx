@@ -5,6 +5,7 @@ import { iTheme } from '../types/theme';
 
 import { Ionicons } from '@expo/vector-icons';
 
+import GolferSearch from '../components/ui/Golfers/GolferSearch';
 import GolferListItem from '../components/ui/Golfers/GolferListItem';
 
 import rankings from '../data/rankings.json';
@@ -12,6 +13,10 @@ import rankings from '../data/rankings.json';
 type GolferProps = {
   lastName: string,
   firstName: string,
+}
+
+const onSearch = (query:string) => {
+  console.log(query);
 }
 
 export default function Home() {
@@ -26,14 +31,7 @@ export default function Home() {
             ...styles.golfersHeader,
             backgroundColor: context.theme.colors.background,
           }}>
-            <TouchableOpacity
-              style={{
-                ...styles.searchButton,
-                backgroundColor: context.theme.colors.accent,
-              }}
-            >
-              <Ionicons name='search' size={36} color={ context.theme.colors.background } />
-            </TouchableOpacity>
+            <GolferSearch onSearch={ onSearch }/>
             <TouchableOpacity>
               <Ionicons name='filter' size={36} color={ context.theme.colors.accent } />
             </TouchableOpacity>
@@ -64,24 +62,6 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderRadius: 5,
     marginBottom: 5,
-  },
-  searchButton: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    width: 60,
-    padding: 5,
-    borderTopRightRadius: 100,
-    borderBottomRightRadius: 100,
-  },
-  input: {
-    fontFamily: 'Quicksand-Regular',
-    fontSize: 24,
-    height: 50,
-    width: '100%',
-    padding: 10,
-    borderRadius: 10,
   },
   title: {
     fontFamily: 'MavenPro-Bold',
