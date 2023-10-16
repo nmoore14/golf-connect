@@ -8,4 +8,5 @@ export type Golfer = {
   avgPoints: number,
   pointsLost: number,
   pointsGained: number,
+  id: number,
 }

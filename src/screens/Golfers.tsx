@@ -9,13 +9,13 @@ import { Ionicons } from '@expo/vector-icons';
 import GolferSearch from '../components/ui/Golfers/GolferSearch';
 import GolferListItem from '../components/ui/Golfers/GolferListItem';
 
-import rankings from '../data/rankings.json';
+import golfersData from '../data/golfers.json';
 
 export default function Home() {
   const [queryText, setQueryText] = React.useState('');
   const [filteredGolfers, setFilteredGolfers] = React.useState<Golfer[]>([])
 
-  const golfers = rankings.rankings;
+  const golfers = golfersData.golfers;
 
   const onSearch = (query:string) => {
     setQueryText(query)
@@ -48,7 +48,7 @@ export default function Home() {
             renderItem={
               ({item}) => <GolferListItem golfer={item}  />
             }
-            keyExtractor={ (item, index) => index }
+            keyExtractor={ (item) => item.id }
           />
         </SafeAreaView>
       )}
