@@ -26,6 +26,7 @@ module.exports = {
     favicon: "./assets/favicon.png"
   },
   extra: {
+    storybookEnabled: process.env.STORYBOOK_ENABLED,
     clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY
   }
 }

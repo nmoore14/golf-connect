@@ -23,7 +23,7 @@ const Stack = createNativeStackNavigator();
 
 const pubClerkKey = Constants.expoConfig?.extra?.clerkPublishableKey
 
-export default function App() {
+function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   const _loadFontsAsync = async () => {
@@ -62,3 +62,11 @@ export default function App() {
     </ClerkProvider>
   );
 }
+
+let AppEntryPoint = App;
+
+if (Constants.expoConfig?.extra?.storybookEnabled === 'true') {
+  AppEntryPoint = require('./.storybook').default;
+}
+
+export default AppEntryPoint;
