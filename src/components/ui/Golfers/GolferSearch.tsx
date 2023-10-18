@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { View, TextInput, Button, StyleSheet, TouchableOpacity } from 'react-native';
 import Animated, { useSharedValue, withSpring } from 'react-native-reanimated';
 import { Ionicons } from '@expo/vector-icons';
@@ -12,6 +12,8 @@ interface SearchProps {
 const GolferSearch: React.FC<SearchProps> = ({ onSearch }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [query, setQuery] = useState('');
+
+  const ref_golfersearch = useRef();
 
   const width = useSharedValue(0);
 
@@ -30,7 +32,10 @@ const GolferSearch: React.FC<SearchProps> = ({ onSearch }) => {
         restDisplacementThreshold: 0.01,
         restSpeedThreshold: 2,
       });
+      ref_golfersearch.current.focus();
     } else {
+      ref_golfersearch.current.clear();
+      ref_golfersearch.current.blur();
       setShowSearch(false);
       width.value = withSpring(0, {
         mass: 1,
@@ -40,6 +45,7 @@ const GolferSearch: React.FC<SearchProps> = ({ onSearch }) => {
         restDisplacementThreshold: 0.01,
         restSpeedThreshold: 2,
       });
+      handleSearch('');
     }
   }
 
@@ -54,6 +60,7 @@ const GolferSearch: React.FC<SearchProps> = ({ onSearch }) => {
                 color: context.theme.colors.primary,
               }}
               onChangeText={ (text) => handleSearch(text) }
+              ref={ref_golfersearch}
             />
           </Animated.View>
           <TouchableOpacity
