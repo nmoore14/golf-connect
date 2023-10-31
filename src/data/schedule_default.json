@@ -1,0 +1,781 @@
+{
+  "orgId": "1",
+  "year": "2023",
+  "schedule": [
+    {
+      "tournId": "464",
+      "name": "Fortinet Championship",
+      "date": {
+        "start": "2022-09-15T00:00:00Z",
+        "end": "2022-09-18T00:00:00Z",
+        "weekNumber": "37"
+      },
+      "format": "stroke",
+      "purse": 8000000,
+      "winnersShare": 1440000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "500",
+      "name": "Presidents Cup",
+      "date": {
+        "start": "2022-09-22T00:00:00Z",
+        "end": "2022-09-25T00:00:00Z",
+        "weekNumber": "38"
+      },
+      "format": "team match",
+      "purse": 0
+    },
+    {
+      "tournId": "054",
+      "name": "Sanderson Farms Championship",
+      "date": {
+        "start": "2022-09-29T00:00:00Z",
+        "end": "2022-10-02T00:00:00Z",
+        "weekNumber": "39"
+      },
+      "format": "stroke",
+      "purse": 7900000,
+      "winnersShare": 1422000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "047",
+      "name": "Shriners Children's Open",
+      "date": {
+        "start": "2022-10-06T00:00:00Z",
+        "end": "2022-10-09T00:00:00Z",
+        "weekNumber": "40"
+      },
+      "format": "stroke",
+      "purse": 8000000,
+      "winnersShare": 1440000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "527",
+      "name": "ZOZO CHAMPIONSHIP",
+      "date": {
+        "start": "2022-10-13T00:00:00Z",
+        "end": "2022-10-16T00:00:00Z",
+        "weekNumber": "41"
+      },
+      "format": "stroke",
+      "purse": 11000000,
+      "winnersShare": 1980000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "521",
+      "name": "THE CJ CUP in South Carolina",
+      "date": {
+        "start": "2022-10-20T00:00:00Z",
+        "end": "2022-10-23T00:00:00Z",
+        "weekNumber": "42"
+      },
+      "format": "stroke",
+      "purse": 10500000,
+      "winnersShare": 1890000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "528",
+      "name": "Butterfield Bermuda Championship",
+      "date": {
+        "start": "2022-10-27T00:00:00Z",
+        "end": "2022-10-30T00:00:00Z",
+        "weekNumber": "43"
+      },
+      "format": "stroke",
+      "purse": 6500000,
+      "winnersShare": 1170000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "457",
+      "name": "World Wide Technology Championship",
+      "date": {
+        "start": "2022-11-03T00:00:00Z",
+        "end": "2022-11-06T00:00:00Z",
+        "weekNumber": "44"
+      },
+      "format": "stroke",
+      "purse": 8200000,
+      "winnersShare": 1476000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "020",
+      "name": "Cadence Bank Houston Open",
+      "date": {
+        "start": "2022-11-10T00:00:00Z",
+        "end": "2022-11-13T00:00:00Z",
+        "weekNumber": "45"
+      },
+      "format": "stroke",
+      "purse": 8400000,
+      "winnersShare": 1512000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "493",
+      "name": "The RSM Classic",
+      "date": {
+        "start": "2022-11-17T00:00:00Z",
+        "end": "2022-11-20T00:00:00Z",
+        "weekNumber": "46"
+      },
+      "format": "stroke",
+      "purse": 8100000,
+      "winnersShare": 1458000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "478",
+      "name": "Hero World Challenge",
+      "date": {
+        "start": "2022-12-01T00:00:00Z",
+        "end": "2022-12-04T00:00:00Z",
+        "weekNumber": "48"
+      },
+      "format": "stroke",
+      "purse": 3500000,
+      "winnersShare": 1000000
+    },
+    {
+      "tournId": "058",
+      "name": "QBE Shootout",
+      "date": {
+        "start": "2022-12-09T00:00:00Z",
+        "end": "2022-12-12T00:00:00Z",
+        "weekNumber": "49"
+      },
+      "format": "stroke",
+      "purse": 3800000,
+      "winnersShare": 475000
+    },
+    {
+      "tournId": "016",
+      "name": "Sentry Tournament of Champions",
+      "date": {
+        "start": "2023-01-05T00:00:00Z",
+        "end": "2023-01-08T00:00:00Z",
+        "weekNumber": "1"
+      },
+      "format": "stroke",
+      "purse": 15000000,
+      "winnersShare": 2700000,
+      "fedexCupPoints": 550
+    },
+    {
+      "tournId": "006",
+      "name": "Sony Open in Hawaii",
+      "date": {
+        "start": "2023-01-12T00:00:00Z",
+        "end": "2023-01-15T00:00:00Z",
+        "weekNumber": "2"
+      },
+      "format": "stroke",
+      "purse": 7900000,
+      "winnersShare": 1422000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "002",
+      "name": "The American Express",
+      "date": {
+        "start": "2023-01-19T00:00:00Z",
+        "end": "2023-01-22T00:00:00Z",
+        "weekNumber": "3"
+      },
+      "format": "stroke",
+      "purse": 8000000,
+      "winnersShare": 1440000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "004",
+      "name": "Farmers Insurance Open",
+      "date": {
+        "start": "2023-01-25T00:00:00Z",
+        "end": "2023-01-28T00:00:00Z",
+        "weekNumber": "4"
+      },
+      "format": "stroke",
+      "purse": 8700000,
+      "winnersShare": 1566000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "005",
+      "name": "AT&T Pebble Beach Pro-Am",
+      "date": {
+        "start": "2023-02-02T00:00:00Z",
+        "end": "2023-02-05T00:00:00Z",
+        "weekNumber": "5"
+      },
+      "format": "stroke",
+      "purse": 9000000,
+      "winnersShare": 1620000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "003",
+      "name": "WM Phoenix Open",
+      "date": {
+        "start": "2023-02-09T00:00:00Z",
+        "end": "2023-02-12T00:00:00Z",
+        "weekNumber": "6"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "007",
+      "name": "The Genesis Invitational",
+      "date": {
+        "start": "2023-02-16T00:00:00Z",
+        "end": "2023-02-19T00:00:00Z",
+        "weekNumber": "7"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 550
+    },
+    {
+      "tournId": "010",
+      "name": "The Honda Classic",
+      "date": {
+        "start": "2023-02-23T00:00:00Z",
+        "end": "2023-02-26T00:00:00Z",
+        "weekNumber": "8"
+      },
+      "format": "stroke",
+      "purse": 8400000,
+      "winnersShare": 1512000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "483",
+      "name": "Puerto Rico Open",
+      "date": {
+        "start": "2023-03-02T00:00:00Z",
+        "end": "2023-03-05T00:00:00Z",
+        "weekNumber": "9"
+      },
+      "format": "stroke",
+      "purse": 3800000,
+      "winnersShare": 684000,
+      "fedexCupPoints": 300
+    },
+    {
+      "tournId": "009",
+      "name": "Arnold Palmer Invitational presented by Mastercard",
+      "date": {
+        "start": "2023-03-02T00:00:00Z",
+        "end": "2023-03-05T00:00:00Z",
+        "weekNumber": "9"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 550
+    },
+    {
+      "tournId": "011",
+      "name": "THE PLAYERS Championship",
+      "date": {
+        "start": "2023-03-09T00:00:00Z",
+        "end": "2023-03-12T00:00:00Z",
+        "weekNumber": "10"
+      },
+      "format": "stroke",
+      "purse": 25000000,
+      "winnersShare": 4500000,
+      "fedexCupPoints": 600
+    },
+    {
+      "tournId": "475",
+      "name": "Valspar Championship",
+      "date": {
+        "start": "2023-03-16T00:00:00Z",
+        "end": "2023-03-19T00:00:00Z",
+        "weekNumber": "11"
+      },
+      "format": "stroke",
+      "purse": 8100000,
+      "winnersShare": 1458000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "522",
+      "name": "Corales Puntacana Championship",
+      "date": {
+        "start": "2023-03-23T00:00:00Z",
+        "end": "2023-03-26T00:00:00Z",
+        "weekNumber": "12"
+      },
+      "format": "stroke",
+      "purse": 3800000,
+      "winnersShare": 684000,
+      "fedexCupPoints": 300
+    },
+    {
+      "tournId": "470",
+      "name": "World Golf Championships-Dell Technologies Match Play",
+      "date": {
+        "start": "2023-03-22T00:00:00Z",
+        "end": "2023-03-26T00:00:00Z",
+        "weekNumber": "12"
+      },
+      "format": "match",
+      "purse": 20000000,
+      "winnersShare": 3500000,
+      "fedexCupPoints": 550
+    },
+    {
+      "tournId": "041",
+      "name": "Valero Texas Open",
+      "date": {
+        "start": "2023-03-30T00:00:00Z",
+        "end": "2023-04-02T00:00:00Z",
+        "weekNumber": "13"
+      },
+      "format": "stroke",
+      "purse": 8900000,
+      "winnersShare": 1602000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "014",
+      "name": "Masters Tournament",
+      "date": {
+        "start": "2023-04-06T00:00:00Z",
+        "end": "2023-04-09T00:00:00Z",
+        "weekNumber": "14"
+      },
+      "format": "stroke",
+      "purse": 18000000,
+      "winnersShare": 3240000,
+      "fedexCupPoints": 600
+    },
+    {
+      "tournId": "012",
+      "name": "RBC Heritage",
+      "date": {
+        "start": "2023-04-13T00:00:00Z",
+        "end": "2023-04-16T00:00:00Z",
+        "weekNumber": "15"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "018",
+      "name": "Zurich Classic of New Orleans",
+      "date": {
+        "start": "2023-04-20T00:00:00Z",
+        "end": "2023-04-23T00:00:00Z",
+        "weekNumber": "16"
+      },
+      "format": "team",
+      "purse": 8600000,
+      "winnersShare": 1242700,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "540",
+      "name": "Mexico Open at Vidanta",
+      "date": {
+        "start": "2023-04-27T00:00:00Z",
+        "end": "2023-04-30T00:00:00Z",
+        "weekNumber": "17"
+      },
+      "format": "stroke",
+      "purse": 7700000,
+      "winnersShare": 1386000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "480",
+      "name": "Wells Fargo Championship",
+      "date": {
+        "start": "2023-05-04T00:00:00Z",
+        "end": "2023-05-07T00:00:00Z",
+        "weekNumber": "18"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "019",
+      "name": "AT&T Byron Nelson",
+      "date": {
+        "start": "2023-05-11T00:00:00Z",
+        "end": "2023-05-14T00:00:00Z",
+        "weekNumber": "19"
+      },
+      "format": "stroke",
+      "purse": 9500000,
+      "winnersShare": 1710000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "033",
+      "name": "PGA Championship",
+      "date": {
+        "start": "2023-05-18T00:00:00Z",
+        "end": "2023-05-21T00:00:00Z",
+        "weekNumber": "20"
+      },
+      "format": "stroke",
+      "purse": 17500000,
+      "winnersShare": 3150000,
+      "fedexCupPoints": 600
+    },
+    {
+      "tournId": "021",
+      "name": "Charles Schwab Challenge",
+      "date": {
+        "start": "2023-05-25T00:00:00Z",
+        "end": "2023-05-28T00:00:00Z",
+        "weekNumber": "21"
+      },
+      "format": "stroke",
+      "purse": 8700000,
+      "winnersShare": 1566000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "023",
+      "name": "the Memorial Tournament presented by Workday",
+      "date": {
+        "start": "2023-06-01T00:00:00Z",
+        "end": "2023-06-04T00:00:00Z",
+        "weekNumber": "22"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 550
+    },
+    {
+      "tournId": "032",
+      "name": "RBC Canadian Open",
+      "date": {
+        "start": "2023-06-08T00:00:00Z",
+        "end": "2023-06-11T00:00:00Z",
+        "weekNumber": "23"
+      },
+      "format": "stroke",
+      "purse": 9000000,
+      "winnersShare": 1620000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "026",
+      "name": "U.S. Open",
+      "date": {
+        "start": "2023-06-15T00:00:00Z",
+        "end": "2023-06-18T00:00:00Z",
+        "weekNumber": "24"
+      },
+      "format": "stroke",
+      "purse": 0,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 600
+    },
+    {
+      "tournId": "034",
+      "name": "Travelers Championship",
+      "date": {
+        "start": "2023-06-22T00:00:00Z",
+        "end": "2023-06-25T00:00:00Z",
+        "weekNumber": "25"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "524",
+      "name": "Rocket Mortgage Classic",
+      "date": {
+        "start": "2023-06-29T00:00:00Z",
+        "end": "2023-07-02T00:00:00Z",
+        "weekNumber": "26"
+      },
+      "format": "stroke",
+      "purse": 8800000,
+      "winnersShare": 1584000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "030",
+      "name": "John Deere Classic",
+      "date": {
+        "start": "2023-07-06T00:00:00Z",
+        "end": "2023-07-09T00:00:00Z",
+        "weekNumber": "27"
+      },
+      "format": "stroke",
+      "purse": 7400000,
+      "winnersShare": 1332000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "518",
+      "name": "Barbasol Championship",
+      "date": {
+        "start": "2023-07-13T00:00:00Z",
+        "end": "2023-07-16T00:00:00Z",
+        "weekNumber": "28"
+      },
+      "format": "stroke",
+      "purse": 3800000,
+      "winnersShare": 684000,
+      "fedexCupPoints": 300
+    },
+    {
+      "tournId": "541",
+      "name": "Genesis Scottish Open",
+      "date": {
+        "start": "2023-07-13T00:00:00Z",
+        "end": "2023-07-16T00:00:00Z",
+        "weekNumber": "28"
+      },
+      "format": "stroke",
+      "purse": 9000000,
+      "winnersShare": 1575000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "472",
+      "name": "Barracuda Championship",
+      "date": {
+        "start": "2023-07-20T00:00:00Z",
+        "end": "2023-07-23T00:00:00Z",
+        "weekNumber": "29"
+      },
+      "format": "stableford",
+      "purse": 3800000,
+      "winnersShare": 684000,
+      "fedexCupPoints": 300
+    },
+    {
+      "tournId": "100",
+      "name": "The Open Championship",
+      "date": {
+        "start": "2023-07-20T00:00:00Z",
+        "end": "2023-07-23T00:00:00Z",
+        "weekNumber": "29"
+      },
+      "format": "stroke",
+      "purse": 16500000,
+      "winnersShare": 3000000,
+      "fedexCupPoints": 600
+    },
+    {
+      "tournId": "525",
+      "name": "3M Open",
+      "date": {
+        "start": "2023-07-27T00:00:00Z",
+        "end": "2023-07-30T00:00:00Z",
+        "weekNumber": "30"
+      },
+      "format": "stroke",
+      "purse": 7800000,
+      "winnersShare": 1404000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "013",
+      "name": "Wyndham Championship",
+      "date": {
+        "start": "2023-08-03T00:00:00Z",
+        "end": "2023-08-06T00:00:00Z",
+        "weekNumber": "31"
+      },
+      "format": "stroke",
+      "purse": 7600000,
+      "winnersShare": 1368000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "027",
+      "name": "FedEx St. Jude Championship",
+      "date": {
+        "start": "2023-08-10T00:00:00Z",
+        "end": "2023-08-13T00:00:00Z",
+        "weekNumber": "32"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 2000
+    },
+    {
+      "tournId": "028",
+      "name": "BMW Championship",
+      "date": {
+        "start": "2023-08-17T00:00:00Z",
+        "end": "2023-08-20T00:00:00Z",
+        "weekNumber": "33"
+      },
+      "format": "stroke",
+      "purse": 20000000,
+      "winnersShare": 3600000,
+      "fedexCupPoints": 2000
+    },
+    {
+      "tournId": "060",
+      "name": "TOUR Championship",
+      "date": {
+        "start": "2023-08-24T00:00:00Z",
+        "end": "2023-08-27T00:00:00Z",
+        "weekNumber": "34"
+      },
+      "format": "stroke",
+      "purse": 0
+    },
+    {
+      "tournId": "543",
+      "name": "Fortinet Championship",
+      "date": {
+        "start": "2023-09-14T00:00:00Z",
+        "end": "2023-09-17T00:00:00Z",
+        "weekNumber": "37"
+      },
+      "format": "stroke",
+      "purse": 8400000,
+      "winnersShare": 1440000,
+      "fedexCupPoints": 500
+    },
+    {
+      "tournId": "468",
+      "name": "Ryder Cup",
+      "date": {
+        "start": "2023-09-29T00:00:00Z",
+        "end": "2023-10-02T00:00:00Z",
+        "weekNumber": "39"
+      },
+      "format": "stroke",
+      "purse": 0
+    },
+    {
+      "tournId": "544",
+      "name": "Sanderson Farms Championship",
+      "date": {
+        "start": "2023-10-05T00:00:00Z",
+        "end": "2023-10-08T00:00:00Z",
+        "weekNumber": "40"
+      },
+      "format": "stroke",
+      "purse": 8200000,
+      "winnersShare": 1422000
+    },
+    {
+      "tournId": "545",
+      "name": "Shriners Children's Open",
+      "date": {
+        "start": "2023-10-12T00:00:00Z",
+        "end": "2023-10-15T00:00:00Z",
+        "weekNumber": "41"
+      },
+      "format": "stroke",
+      "purse": 8400000,
+      "winnersShare": 1440000
+    },
+    {
+      "tournId": "546",
+      "name": "ZOZO Championship",
+      "date": {
+        "start": "2023-10-19T00:00:00Z",
+        "end": "2023-10-22T00:00:00Z",
+        "weekNumber": "42"
+      },
+      "format": "stroke",
+      "purse": 8500000,
+      "winnersShare": 1980000
+    },
+    {
+      "tournId": "547",
+      "name": "World Wide Technology Championship",
+      "date": {
+        "start": "2023-11-02T00:00:00Z",
+        "end": "2023-11-05T00:00:00Z",
+        "weekNumber": "44"
+      },
+      "format": "stroke",
+      "purse": 8200000,
+      "winnersShare": 1476000
+    },
+    {
+      "tournId": "548",
+      "name": "Butterfield Bermuda Championship",
+      "date": {
+        "start": "2023-11-09T00:00:00Z",
+        "end": "2023-11-12T00:00:00Z",
+        "weekNumber": "45"
+      },
+      "format": "stroke",
+      "purse": 6500000,
+      "winnersShare": 1170000
+    },
+    {
+      "tournId": "549",
+      "name": "The RSM Classic",
+      "date": {
+        "start": "2023-11-16T00:00:00Z",
+        "end": "2023-11-19T00:00:00Z",
+        "weekNumber": "46"
+      },
+      "format": "stroke",
+      "purse": 8400000,
+      "winnersShare": 1458000
+    },
+    {
+      "tournId": "550",
+      "name": "Hero World Challenge",
+      "date": {
+        "start": "2023-11-30T00:00:00Z",
+        "end": "2023-12-03T00:00:00Z",
+        "weekNumber": "48"
+      },
+      "format": "stroke",
+      "purse": 3500000,
+      "winnersShare": 1000000
+    },
+    {
+      "tournId": "551",
+      "name": "Grant Thornton Invitational",
+      "date": {
+        "start": "2023-12-08T00:00:00Z",
+        "end": "2023-12-11T00:00:00Z",
+        "weekNumber": "49"
+      },
+      "format": "stroke",
+      "purse": 4000000
+    },
+    {
+      "tournId": "088",
+      "name": "PGA TOUR Q-School presented by Korn Ferry",
+      "date": {
+        "start": "2023-12-14T00:00:00Z",
+        "end": "2023-12-17T00:00:00Z",
+        "weekNumber": "50"
+      },
+      "format": "stroke",
+      "purse": 0,
+      "winnersShare": 50000
+    }
+  ],
+}
